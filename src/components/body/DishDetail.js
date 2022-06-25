@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, CardBody, CardHeader, CardImg, CardImgOverlay, CardSubtitle, CardTitle, CardText } from 'reactstrap';
+import LoadComments from "./LoadComments";
+
 
 const DishDetail = props => {
     return (
@@ -12,6 +14,9 @@ const DishDetail = props => {
                         <p>{props.detail.description}</p>
                         <p>Caregory : {props.detail.category}</p>
                         <p>Price : {props.detail.price}/-</p>
+                        <hr />
+                        <h5 style={{ fontStyle: "italic" }}><u>Comments</u></h5>
+                        <LoadComments comments={props.detail.comments} />
                         <button type="button" style={{ color: "white", background: "green", Align: "center" }}>Order</button>
                     </CardText>
                 </CardBody>

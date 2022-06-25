@@ -6,7 +6,6 @@ import Footer from "./footer/Footer";
 const MainComponent = () => {
     return (
         <div>
-            <p>HI</p>
             <Header />
             <Body />
             <Footer />
