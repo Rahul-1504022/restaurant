@@ -32,7 +32,23 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer {
+  background-color: #D1C4B9;
+  margin: 10px auto;
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.row-container {
+  margin: 0px auto;
+  padding: 50px 0px 100px 0px;
+  min-height: 400px;
 }
